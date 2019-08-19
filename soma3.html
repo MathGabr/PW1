@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function soma () {
+            var v1 = parsefloat (document.f1.v1.value);
+            var v2 = parsefloat (document.f2.v2.value);
+            var soma = v1+v2;
+            documet.getElementByid("total").innerHTML = "Resultado" + soma;
+            alert (soma);
+        }
+    </script>
+</head>
+<body>
+    <form name="f1" action="" onsubmit="soma()">
+        Valor 1: <input type="text" name="v1"/><br>
+        Valor 2: <input type="text" name="v2"/><br>
+        <input type="submit" value="Somar"/>
+    </form>
+</body>
+</html>
